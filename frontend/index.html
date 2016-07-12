@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Qunabu Junior Recruitment Task" />
+	<meta name="author" content="Sebastian Masztarowski" />
+	<title>Qunabu - rekrutacja</title>
+
+
+	<!-- FONT
+	- - - - - - - - - - - - - - - - - - - - - - -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- CSS
+	- - - - - - - - - - - - - - - - - - - - - - -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<main>
+		<table id="to-do-list" class="to-do-table">
+			<tr>
+				<th class="column-a"></th>
+				<th class="column-b"></th>
+				<th class="column-c" colspan="2">ToDo List</th>
+			</tr>
+			<tr>
+				<td class="column-a">
+					<input type="checkbox" name="position" value="1">
+				</td>
+				<td class="column-b"></td>
+				<td class="column-c">
+					Sample post 1
+				</td>
+				<td class="column-d"> <i class="fa fa-trash" aria-hidden="true"></i> </td>
+			</tr>
+
+			<tr>
+				<td class="column-a" >
+					<input type="checkbox" name="position" value="2">
+				</td>
+				<td class="column-b"></td>
+				<td class="column-c">
+					Another post
+				</td>
+				<td class="column-d"> <i class="fa fa-trash" aria-hidden="true" ></i> </td>
+			</tr>
+			<tr>
+				<td class="column-a"><i class="fa fa-plus" aria-hidden="true" onclick="createRow()"></i></td>
+				<td class="column-b"></td>
+				<td class="column-c" colspan="2">
+					<input id="input-item" type="textbox" name="newItem">
+				</td>
+			</tr>
+		</table>
+	</main>
+
+	<script src="scripts/script.js"></script>
+</body>
+
+</html> 

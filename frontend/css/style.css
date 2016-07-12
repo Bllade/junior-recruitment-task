@@ -1,0 +1,155 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0; 
+}
+
+body, html { 
+	font-size: 100%; 
+	height: 100%;
+}
+
+html {
+	line-height:1.5; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	background-color: #e9f0f4;
+	font-family: 'Lato', sans-serif;
+	font-size: 100%;
+}
+
+/* *************************
+****************************
+************************* */
+
+main {
+	height: 100vh;
+
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.to-do-table {
+	border-collapse:collapse;
+	border-style: solid;
+	border-color: #dbdbdb;
+	border-width: .1rem;
+}
+
+.to-do-table tr:nth-child(1) {
+	background-color: #2e3641;
+}
+
+.to-do-table th {
+	font-weight: 600;
+	font-size: .9rem;
+	color: #dae4eb;
+}
+
+.to-do-table td {
+	/*font-weight: 600;*/
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #2e3641;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.column-a {
+	width: 1.8rem;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.column-b {
+	width: .3rem;
+	border-left-style: solid;
+	border-left-width: .1rem;
+	border-left-color: rgba(255, 255, 255, .1);
+
+	border-right-style: solid;
+	border-right-width: .1rem;
+	border-right-color: rgba(255, 255, 255, .1);
+}
+
+.to-do-table tr:nth-child(n+2) .column-b{
+	border-left-color: rgba(0, 0, 0, .1);
+	border-right-color: rgba(0, 0, 0, .1);
+}
+.column-c {
+	width: 16.4rem;
+	padding-left: .6rem;
+	text-align: left;
+	font-size: .7rem;
+	/*padding-left: 1rem;*/
+	padding-bottom: .5rem;
+	padding-top: .5rem;
+}
+
+.column-d {
+	text-align: left;
+	width: 1.5rem;
+	font-size: .8rem;
+}
+
+.to-do-table i {
+	cursor: pointer;
+}
+
+.done > td {
+	text-decoration: line-through;
+	color: #9eb2c0;
+}
+
+.column-a > i {
+	color: #dae4eb;
+}
+input[type="textbox"] {
+	width: 95%;
+	border: none;
+	background-color: rgba(218, 228, 235, .8);
+	padding-left: .5rem;
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+	border-radius: .5rem;
+
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	border: 1px solid #DDDDDD;
+}
+
+input[type="textbox"]:focus {
+	background-color: rgba(218, 228, 235, .5);
+
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border: 1px solid rgba(81, 203, 238, 1);
+}
