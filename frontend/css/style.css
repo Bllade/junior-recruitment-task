@@ -34,9 +34,9 @@ main {
 	display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -69,7 +69,6 @@ main {
 }
 
 .to-do-table td {
-	/*font-weight: 600;*/
 	cursor: pointer;
 	background-color: #ffffff;
 	color: #2e3641;
@@ -107,7 +106,6 @@ input[type="checkbox"] {
 	padding-left: .6rem;
 	text-align: left;
 	font-size: .7rem;
-	/*padding-left: 1rem;*/
 	padding-bottom: .5rem;
 	padding-top: .5rem;
 }
@@ -152,4 +150,25 @@ input[type="textbox"]:focus {
 
 	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+/**
+* Error
+*/
+.isa_error {
+	display: none;
+	margin: 10px 0px;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	padding-right: .6rem;
+	padding-left: .6rem;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.isa_error i {
+    margin:.4rem .9rem;
+    font-size:2em;
+    vertical-align:middle;
 }
